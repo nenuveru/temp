@@ -15,5 +15,6 @@ struct TigerList
     var age : Int
     var name : String
     var image = UIImage(named: "")
+//change
 }
 

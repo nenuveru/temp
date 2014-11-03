@@ -11,7 +11,7 @@ import UIkit
 
 struct TigerList
 {
-    
+   //struct example
     var age : Int
     var name : String
     var image = UIImage(named: "")

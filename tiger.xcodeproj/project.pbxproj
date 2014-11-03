@@ -14,6 +14,9 @@
 		B819F7F61A069284001D9F34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B819F7F41A069284001D9F34 /* LaunchScreen.xib */; };
 		B819F8021A069284001D9F34 /* tigerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819F8011A069284001D9F34 /* tigerTests.swift */; };
 		B819F80E1A0692D2001D9F34 /* tigerstruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B819F80D1A0692D2001D9F34 /* tigerstruct.swift */; };
+		B8BCD0FD1A06FB12002F079E /* Unknown-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD0FC1A06FB12002F079E /* Unknown-2.jpg */; };
+		B8BCD0FF1A06FB18002F079E /* Unknown-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD0FE1A06FB18002F079E /* Unknown-3.jpg */; };
+		B8BCD1011A06FB1F002F079E /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD1001A06FB1F002F079E /* Unknown.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		B819F8001A069284001D9F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B819F8011A069284001D9F34 /* tigerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tigerTests.swift; sourceTree = "<group>"; };
 		B819F80D1A0692D2001D9F34 /* tigerstruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tigerstruct.swift; sourceTree = SOURCE_ROOT; };
+		B8BCD0FC1A06FB12002F079E /* Unknown-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-2.jpg"; sourceTree = "<group>"; };
+		B8BCD0FE1A06FB18002F079E /* Unknown-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-3.jpg"; sourceTree = "<group>"; };
+		B8BCD1001A06FB1F002F079E /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				B819F80D1A0692D2001D9F34 /* tigerstruct.swift */,
 				B819F7ED1A069284001D9F34 /* ViewController.swift */,
 				B819F7EF1A069284001D9F34 /* Main.storyboard */,
+				B8BCD1001A06FB1F002F079E /* Unknown.jpg */,
+				B8BCD0FE1A06FB18002F079E /* Unknown-3.jpg */,
+				B8BCD0FC1A06FB12002F079E /* Unknown-2.jpg */,
 				B819F7F21A069284001D9F34 /* Images.xcassets */,
 				B819F7F41A069284001D9F34 /* LaunchScreen.xib */,
 				B819F7E91A069284001D9F34 /* Supporting Files */,
@@ -197,7 +206,10 @@
 			files = (
 				B819F7F11A069284001D9F34 /* Main.storyboard in Resources */,
 				B819F7F61A069284001D9F34 /* LaunchScreen.xib in Resources */,
+				B8BCD1011A06FB1F002F079E /* Unknown.jpg in Resources */,
 				B819F7F31A069284001D9F34 /* Images.xcassets in Resources */,
+				B8BCD0FD1A06FB12002F079E /* Unknown-2.jpg in Resources */,
+				B8BCD0FF1A06FB18002F079E /* Unknown-3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +423,7 @@
 				B819F8071A069284001D9F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B819F8081A069284001D9F34 /* Build configuration list for PBXNativeTarget "tigerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				B819F80A1A069284001D9F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,11 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var imageLabel: UIImageView!
-
-    var tigerArray: [TigerList] = []
     var i:Int = 0
+    var tigerArray: [TigerList] = []
+    @IBOutlet weak var imageLabel: UIImageView!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBAction func nextitem(sender: UIBarButtonItem) {
@@ -52,9 +50,13 @@ class ViewController: UIViewController {
         
         
         
-        tigerArray = [TigerList(age:2 , name:"BEngal", image:UIImage(named: "unknown.jpg")) ,TigerList(age:3 , name:"Bengal1", image:UIImage(named: "unknown-2.jpg"))  , TigerList(age:4 , name:"Bengal2", image:UIImage(named: "unknown-3.jpg"))]
+        tigerArray = [TigerList(age:2 , name:"BEngal", image:UIImage(named: "unknown.jpg")!) ,TigerList(age:3 , name:"Bengal1", image:UIImage(named: "unknown-2.jpg")!)  , TigerList(age:4 , name:"Bengal2", image:UIImage(named: "unknown-3.jpg")!)]
         if i < tigerArray.count
         {
+            for i in tigerArray {
+                i.trueAge(i.age)  //call its function to update its age
+            }
+           
           ageLabel.text = String(tigerArray[i].age)
             nameLabel.text = tigerArray[i].name
             imageLabel.image = tigerArray[i].image

@@ -17,6 +17,8 @@
 		B8BCD0FD1A06FB12002F079E /* Unknown-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD0FC1A06FB12002F079E /* Unknown-2.jpg */; };
 		B8BCD0FF1A06FB18002F079E /* Unknown-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD0FE1A06FB18002F079E /* Unknown-3.jpg */; };
 		B8BCD1011A06FB1F002F079E /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8BCD1001A06FB1F002F079E /* Unknown.jpg */; };
+		B8BCD1751A12715A002F079E /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BCD1741A12715A002F079E /* ObjCViewController.m */; };
+		B8BCD17A1A12741E002F079E /* tigerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BCD1791A12741E002F079E /* tigerClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,11 @@
 		B8BCD0FC1A06FB12002F079E /* Unknown-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-2.jpg"; sourceTree = "<group>"; };
 		B8BCD0FE1A06FB18002F079E /* Unknown-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unknown-3.jpg"; sourceTree = "<group>"; };
 		B8BCD1001A06FB1F002F079E /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
+		B8BCD1721A127159002F079E /* tiger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tiger-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8BCD1731A12715A002F079E /* ObjCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
+		B8BCD1741A12715A002F079E /* ObjCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
+		B8BCD1781A12741E002F079E /* tigerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tigerClass.h; sourceTree = "<group>"; };
+		B8BCD1791A12741E002F079E /* tigerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tigerClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,11 @@
 				B819F7F21A069284001D9F34 /* Images.xcassets */,
 				B819F7F41A069284001D9F34 /* LaunchScreen.xib */,
 				B819F7E91A069284001D9F34 /* Supporting Files */,
+				B8BCD1731A12715A002F079E /* ObjCViewController.h */,
+				B8BCD1741A12715A002F079E /* ObjCViewController.m */,
+				B8BCD1721A127159002F079E /* tiger-Bridging-Header.h */,
+				B8BCD1781A12741E002F079E /* tigerClass.h */,
+				B8BCD1791A12741E002F079E /* tigerClass.m */,
 			);
 			path = tiger;
 			sourceTree = "<group>";
@@ -227,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BCD1751A12715A002F079E /* ObjCViewController.m in Sources */,
 				B819F7EE1A069284001D9F34 /* ViewController.swift in Sources */,
 				B819F80E1A0692D2001D9F34 /* tigerstruct.swift in Sources */,
+				B8BCD17A1A12741E002F079E /* tigerClass.m in Sources */,
 				B819F7EC1A069284001D9F34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +368,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tiger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tiger/tiger-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -364,9 +381,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tiger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tiger/tiger-Bridging-Header.h";
 			};
 			name = Release;
 		};
